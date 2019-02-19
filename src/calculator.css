@@ -1,0 +1,50 @@
+body {
+    font-size: 64px;
+    background-color: white;
+}
+.container{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 80px 80px 80px 80px;
+    grid-template-rows: 80px 80px;
+    grid-template-areas: 
+    "header header header header"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+}
+.item-header {
+    grid-area: header;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    background-color: white;
+    color: black;
+    text-align: right;
+}
+.btn {
+    background-color: white;
+    border: 1px solid grey;
+    color: black;
+    padding:20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size:25px;
+    margin: 4px 2px;
+    border-radius:25px;
+    font-family: 'Righteous', cursive;
+
+}
+.blue { 
+    background-color: whitesmoke;
+    color: #2898c9;
+}
+.green {
+    background-color: #0d9634;
+    color: white;
+}
+button {
+    font-size: 55px;
+}
