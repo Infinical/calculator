@@ -15,7 +15,7 @@ body {
     "main main main main"
     "main main main main"
 }
-.item-header {
+.calculator_display {
     grid-area: header;
     grid-row-start: 1;
     grid-row-end: 1;
@@ -37,11 +37,11 @@ body {
     font-family: 'Righteous', cursive;
 
 }
-.blue { 
+.key-operators { 
     background-color: whitesmoke;
     color: #2898c9;
 }
-.green {
+.key-equal {
     background-color: #0d9634;
     color: white;
 }

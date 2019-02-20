@@ -3,37 +3,42 @@
 <head>
     <link rel="stylesheet" type="text/css" href="calculator.css">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <script type="text/javascript" src="calculator.js"></script>
 </head>
 
 <body>
     <div class="container">
 
-        <div class="item item-header">0</div>
+        <div class="calculator_display">0</div>
 
-        <button class="btn blue">C</button>
-        <button class="btn blue">( )</button>
-        <button class="btn blue">%</button>
-        <button class="btn blue">/</button>
+      
 
-        <button class="btn">7</button>
-        <button class="btn">8</button>
-        <button class="btn">9</button>
-        <button class="btn blue">*</button>
+        <button class="btn key-operators">C</button>
+        <button class="btn key-operators">( )</button>
+        <button class="btn key-operators" data-action="percantage">%</button>
+        <button class="btn key-operators" data-action="divide">/</button>
 
-        <button class="btn">4</button>
-        <button class="btn">5</button>
-        <button class="btn">6</button>
-        <button class="btn blue">-</button>
+        <button class="btn" data-num="7">7</button>
+        <button class="btn" data-num="8">8</button>
+        <button class="btn" data-num="9">9</button>
+        <button class="btn key-operators" data-action="multiply">*</button>
 
-        <button class="btn">1</button>
-        <button class="btn">2</button>
-        <button class="btn">3</button>
-        <button class="btn blue">+</button>
+        <button class="btn" data-num="4">4</button>
+        <button class="btn" data-num="5">5</button>
+        <button class="btn" data-num="6">6</button>
+        <button class="btn key-operators" data-action="subtract">-</button>
 
-        <button class="btn">.</button>
+        <button class="btn" data-num="1">1</button>
+        <button class="btn" data-num="2">2</button>
+        <button class="btn" data-num="3">3</button>
+        <button class="btn key-operators" data-action="add">+</button>
+
+        <button class="btn key-operators" >.</button>
         <button class="btn">0</button>
-        <button class="btn">+/-</button>
-        <button class="btn green">=</button>
+        <button class="btn key-operators" data-action="negative/positive">+/-</button>
+        <button class="btn key-equal" data-action="calculate">=</button>
+
+    
 
     </div>
 </body>
