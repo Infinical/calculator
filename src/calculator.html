@@ -3,18 +3,17 @@
 <head>
     <link rel="stylesheet" type="text/css" href="calculator.css">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-    <script type="text/javascript" src="calculator.js"></script>
+    
 </head>
 
 <body>
-    <div class="container">
+    <div class="calculator">
 
         <div class="calculator_display">0</div>
 
-      
-
-        <button class="btn key-operators">C</button>
-        <button class="btn key-operators">( )</button>
+        <div class="calculator_key">
+        <button data-action="clear">C</button>
+        <button class="btn key-operators" data-action="brackets">( )</button>
         <button class="btn key-operators" data-action="percantage">%</button>
         <button class="btn key-operators" data-action="divide">/</button>
 
@@ -33,14 +32,16 @@
         <button class="btn" data-num="3">3</button>
         <button class="btn key-operators" data-action="add">+</button>
 
-        <button class="btn key-operators" >.</button>
+        <button class="btn"  data-action="decimal">.</button>
         <button class="btn">0</button>
         <button class="btn key-operators" data-action="negative/positive">+/-</button>
         <button class="btn key-equal" data-action="calculate">=</button>
 
-    
+    </div>
+
 
     </div>
+    <script type="text/javascript" src="main.js"></script>
 </body>
 
 </html>
